@@ -1,0 +1,226 @@
+/*
+
+width => LARGURA
+heigth => ALTURA
+Background - imagem => Troca imagem de fundo
+
+Unidade de Medida
+px => pixel
+vh => view height / a Altura da tela divido por 100
+vw => view width / a Largura da tela divido por 100
+cm => centímetro
+
+
+todo navegador tem medidas padrões
+
+margin = lado de fora espaçamento
+margin - padding - lado de dentro / preenchimento.
+
+font-size => troca o tamanho do texto
+color => troca a fonte do texto
+font-family => troca a fonte do texto
+display => Troca a forma que o elemento se comporta
+na tela (Ex: fica sozinho na linha ou na mesma linha de outros elementos)
+
+
+* display: como o elemento se comporta
+display block e o display inline
+
+elemento com bloco sozinho na linha dele
+elemento bloco inline no caso são todos na mesma linha.
+
+margin-top: distância do elemento da margem (topo da pagina)
+margin-left: distância do elemento da margem 
+(desloca da margem para o lado esquerdo)
+
+top => cima
+bottom => baixo
+left => esquerda
+right => direita
+
+
+border-radius => Arredonda as bordas
+border => Muda a cor, o tamanho e o tipo de borda do elemento
+
+text-aling - centraliza o texto.
+text-decoration: none; => tira aquela barra de baixo do link
+
+cursor => Muda o cursor do mouse
+position => serve para defiir como iremos posicionar os elementos na tela
+float: joga o elemento para o lado (ex: colocamos o formulário para o lado direito
+da pagina)
+
+background-size: cover => vai adaptar a imagem ao tamanho da tela.
+
+*/
+
+*{ 
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.caixa-superior {
+    background-image: url("Dev.png");
+    height: 130vh;
+    background-size: cover;
+}
+
+.cabeçalho {
+    padding-top: 28px;
+    padding-left: 35px;
+}
+
+
+.titulo-cabeçalho {
+    font-size: 24px;
+    color: #FFFFFF;
+    display: inline;
+    text-align: center;
+
+}
+
+.link-cabeçalho {
+    font-size: 24px;
+    color: #FFFFFF;
+    display: inline;
+    margin-left: 20px;
+    cursor: pointer;
+    text-decoration: none;
+   
+}
+
+h1 {
+    font-size: 58px;
+    color: #FFFFFF;
+    position: relative;
+    top: 440px;
+    margin-left: 35px;
+    background-color: #252B42;
+    border-radius: 20px;
+    padding-left: 20px;
+    display: inline;
+    padding-right: 20px;
+}
+
+form {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    float: right;
+    padding: 20px;
+    margin-right: 50px;
+    position: relative;
+    bottom: -18px;
+    }
+
+input {
+    display: block; 
+    background: #F9F9F9;
+    border: 1px solid #E6E6E6;
+    border-radius: 5px;
+    height:40px;
+    width: 250px;
+    margin-bottom: 25px;
+    padding-left: 10px;
+   
+}
+
+textarea {
+    display:block;
+    width: 249px; 
+    height: 137px;
+    background: #F9F9F9;
+    border: 1px solid #E6E6E6;
+    border-radius: 5px;
+    padding-left: 10px;
+    resize: none;
+    
+    
+    
+}
+
+.titulo-formulario {
+    font-size: 24px;
+    text-align: center ;
+    color: #252B42;
+    margin-bottom: 30px;
+}
+
+label {
+    font-size: 14px;
+    color: #252B42;
+}
+
+button {
+    height:40px;
+    width: 250px;
+    margin-top: 40px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background: #40BB15;
+    color: #FFFFFF;
+
+}
+
+#titulo-meio {
+    font-size: 40px;
+    color: #252B42;
+    text-align: center;
+    margin-top:77px;
+    margin-bottom: 89px;
+  
+}
+
+.caixa-central {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+}
+
+.card {
+    width: 300px;
+    border-radius: 10px;
+    background-color: #EEF6FF;
+    border: 1px solid #A9D6FF;
+}
+
+.titulo-card {
+    background: #219653;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px 10px 0 0;
+    border: 1px solid #A9D6FF;
+}
+
+ul {
+    padding: 20px;
+}
+
+li {
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+
+.caixa-inferior {
+    background-color: #252B42;
+    color:#FFFFFF;
+}
+
+#titulo-inferior {
+    color: #FFFFFF;
+    font-size: 40px;
+    text-align: center;
+    padding-top:50px;
+    
+}
+
+.paragrafo-inferior {
+    color: #FFFFFF;
+    font-size: 18px;
+    text-align: justify;
+    padding: 20px 50px 50px 50px;
+
+}
